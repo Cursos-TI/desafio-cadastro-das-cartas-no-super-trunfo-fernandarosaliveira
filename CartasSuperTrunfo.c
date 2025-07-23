@@ -64,7 +64,7 @@ int main() {
     scanf("%f", &pib2);
     printf("\n");
 
-    // Exibe as informações contidas nas variáveis através do printf para o usuário da carta 1.
+    // Exibe as informações da carta 1 contidas nas variáveis através do printf para o usuário.
     printf("Carta 1:\n");
     printf("Estado: %c \n", estado);
     printf("Código: %c%s  \n", estado, codigo);
@@ -75,7 +75,7 @@ int main() {
     printf("Número de pontos turísticos: %d \n", numerodept);
     printf("\n");
 
-    // Exibe as informações contidas nas variáveis através do printf para o usuário da carta 2.
+    // Exibe as informações da carta 2 contidas nas variáveis através do printf para o usuário.
     printf("Carta 2:\n");
     printf("Estado: %c \n", estado2);
     printf("Código: %c%s  \n", estado2, codigo2);
