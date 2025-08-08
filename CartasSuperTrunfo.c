@@ -19,9 +19,6 @@ int main() {
     int numerodept2;
     float area2, pib2, densidadepopulacional2, inversodensidade2, pibpercapita2, superpoder2;
 
-    //Armazenamento dos resultados finais.
-    int resultado1, resultado2, resultado3;
-
     // Introdução.
     printf("--- Bem vindo ao Programa de Cadastro de Cartas ---");
     printf("Vamos começar preenchendo as informações da primeira carta.\n");
@@ -111,6 +108,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d \n", numerodept2);
     printf("Densidade Populacional: %.2f hab/km² \n", densidadepopulacional2);
     printf("PIB per Capita: %.2f reais \n", pibpercapita2);
+    printf("\n");
 
     // Calcula e armazena os resultados da comparação de cartas.
     int res_pop, res_area, res_pib, res_pt, res_densidade, res_pibpc, res_superpoder;
@@ -131,6 +129,7 @@ int main() {
     printf("Densidade Populacional: a Carta %d venceu! (%d)\n", res_densidade ? 1 : 2, res_densidade);
     printf("PIB per Capita: a Carta %d venceu! (%d)\n", res_pibpc ? 1 : 2, res_pibpc);
     printf("Superpoder: a Carta %d venceu! (%d)\n", res_superpoder ? 1 : 2, res_superpoder);
+    printf("\n");
 
     // Despedida.
     printf("Fim do Programa. Obrigada.");
