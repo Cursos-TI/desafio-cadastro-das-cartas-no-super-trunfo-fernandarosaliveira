@@ -53,9 +53,8 @@ int main() {
 
     //Calcula a Densidade Populacional, o Inverso da Densidae, O SuperPoder e o PIB per Capita, utilizando os Operadores Matemáticos.
     densidadepopulacional = (float)populacao / area;
-    inversodensidade = area / (float)populacao;
     pibpercapita = (pib * 1000000000.0f) / (float)populacao;
-    superpoder = (float)populacao + area + pib + pibpercapita + inversodensidade + numerodept;
+    superpoder = (float)populacao + area + pib + pibpercapita + (1.0f / densidadepopulacional) + numerodept;
 
     // Preenchimento das variáveis através do scanf com entrada padrão para a carta 2.
     printf("Agora a segunda carta.\n");
@@ -85,16 +84,15 @@ int main() {
 
     // Calcula a Densidade Populacional, o Inverso, O SuperPoder e o PIB per Capita, utilizando os Operadores Matemáticos.
     densidadepopulacional2 = (float)populacao2 / area2;
-    inversodensidade2 = area2 / (float)populacao2;
     pibpercapita2 = (pib2 * 1000000000.0f) / (float)populacao2;
-    superpoder2 = (float)populacao2 + area2 + pib2 + pibpercapita2 + inversodensidade2 + numerodept2;
+    superpoder2 = (float)populacao2 + area2 + pib2 + pibpercapita2 + (1.0f / densidadepopulacional2) + numerodept2;
 
     // Exibe as informações da carta 1 contidas nas variáveis através do printf para o usuário.
     printf("Carta 1:\n");
     printf("Estado: %c \n", estado);
     printf("Código: %s  \n", codigo);
     printf("Nome da cidade: %s \n", cidade);
-    printf("População: %ld \n", populacao);
+    printf("População: %lu \n", populacao);
     printf("Área da Cidade: %.2f km² \n", area);
     printf("PIB da Cidade: %.2f bilhões de reais \n", pib);
     printf("Número de Pontos Purísticos: %d \n", numerodept);
